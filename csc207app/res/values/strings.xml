@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">csc207app</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_message">Please enter your Nurse Account Number and Password</string>
+    <string name="header">Login as a Nurse or Doctor or create a new login!</string>
+    <string name="account_number">Account Number</string>
+    <string name="password">Password</string>
+    <string name="loginNurse">Login as Nurse</string>
+    <string name="sign_up">No, I want to sign up</string>
+    <string name="title_activity_display">DisplayActivity</string>
+    <string name="title_activity_operation">OperationActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="headerregister">If you are not registered, please do so below.</string>
+    <string name="register">Register</string>
+    <string name="loadsaveaddtitle">Load a patient by entering a health card number, or add a patient.</string>
+    <string name="card_number">Card no.</string>
+    <string name="loadbutton">Load</string>
+    <string name="addbutton">Add</string>
+    <string name="newname">Name</string>
+    <string name="dob">DOB</string>
+    <string name="save">Save and Go Back</string>
+    <string name="updatevitalsign">Update the vital sign of this patient</string>
+    <string name="backtopatientselectionbutton">Back to patient selection</string>
+    <string name="showpatientinfo">Here is the information of this patient</string>
+    <string name="updatevitalsignsbutton">Update</string>
+    <string name="temperature">Temperature</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="heart_rate">Heart rate</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_update">UpdateActivity</string>
+    <string name="loginDoctor">Login as Doctor</string>
+    <string name="title_activity_doctor_selection">DoctorSelectionActivity</string>
+    <string name="doctorSelectView">View Patient Data</string>
+    <string name="doctorSelectUpdate">Update Patient Data</string>
+    <string name="title_activity_nurse_selection">NurseSelectionActivity</string>
+    <string name="nurseSelectUpdate">Add / Update Patient Data</string>
+    <string name="nurseSelectView">View Patient data</string>
+    <string name="title_activity_nurse_update">NurseUpdateActivity</string>
+    <string name="title_activity_doctor_update">DoctorUpdateActivity</string>
+    <string name="title_activity_doctor_view">DoctorViewActivity</string>
+    <string name="title_activity_nurse_view">NurseViewActivity</string>
+    <string name="addPrescriptionPatientGuide">Update Prescription of Patient</string>
+    <string name="doctorLoadPatientText">Patient Card No.</string>
+    <string name="doctorLoadPatientButton">Load</string>
+    <string name="title_activity_prescription">PrescriptionActivity</string>
+    <string name="prescription">Prescription</string>
+    <string name="loadadd">Load/Add</string>
+    <string name="averylongstring">L o a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / L o a d / A d d / </string>
+    <string name="viewPatientGuide">You can enter Patient Card Number to view Patient data</string>
+    <string name="updatePatientGuide">Or add / update a patient</string>
+    <string name="doctorSavePrescriptionButton">Update Prescription</string>
+    <string name="doctorGoBackToSelection">Save and Go back</string>
+    <string name="title_activity_nurse_urgent_patient">NurseUrgentPatientActivity</string>
+
+</resources>

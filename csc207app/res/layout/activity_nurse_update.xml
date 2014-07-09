@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="20"
+        android:gravity="center"
+        android:text="@string/loadsaveaddtitle"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </TextView>
+
+    <EditText
+        android:id="@+id/patient_number_field1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/card_number"
+        android:width="170dp" />
+
+    <Button
+        android:id="@+id/load_patient_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/patient_number_field1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/patient_number_field1"
+        android:layout_marginRight="42dp"
+        android:gravity="center"
+        android:onClick="loadPatient"
+        android:text="@string/loadbutton" />
+
+    <EditText
+        android:id="@+id/patient_number_field2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patient_number_field1"
+        android:layout_below="@+id/patient_number_field1"
+        android:layout_marginTop="22dp"
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/card_number"
+        android:width="170dp" />
+
+    <Button
+        android:id="@+id/add_patient_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dob_field"
+        android:layout_alignLeft="@+id/load_patient_button"
+        android:layout_alignTop="@+id/patient_number_field2"
+        android:gravity="center"
+        android:onClick="addPatient"
+        android:text="@string/addbutton" />
+
+    <EditText
+        android:id="@+id/patient_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patient_number_field2"
+        android:layout_below="@+id/patient_number_field2"
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/newname"
+        android:width="170dp" />
+
+    <EditText
+        android:id="@+id/dob_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patient_name_field"
+        android:layout_below="@+id/patient_name_field"
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/dob"
+        android:width="170dp" />
+
+    <EditText
+        android:id="@+id/date_field_for_doctor_visit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patient_number_field_for_doctor_visit"
+        android:layout_alignRight="@+id/patient_number_field_for_doctor_visit"
+        android:layout_below="@+id/patient_number_field_for_doctor_visit"
+        android:ems="10"
+        android:hint="Visit date: ddmmyy" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/date_field_for_doctor_visit"
+        android:layout_alignLeft="@+id/add_patient_button"
+         android:onClick="addVisit"
+        android:text="Add Doctor Visit" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date_field_for_doctor_visit"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/date_field_for_doctor_visit"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="save"
+        android:text="@string/save" />
+
+    <EditText
+        android:id="@+id/patient_number_field_for_doctor_visit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dob_field"
+        android:layout_below="@+id/dob_field"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Card Number" />
+
+</RelativeLayout>

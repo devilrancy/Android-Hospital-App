@@ -1,0 +1,39 @@
+Android Application - Nurse/Patient Tracking
+README File
+Using the app should be pretty self-explanatory, given the GUI updates we've made. Any questions can and will be answered by this README. 
+
+PROJECT LOCATION:
+-the project is located in the /csc207app folder. This is what you should import into Eclipse.
+
+LOGGING IN:
+-TO LOG IN, start the app, then push the file (see below), then restart the app. This is how it worked for us.
+-We have created a passwords.txt file (located in /csc207app/passwords.txt) for you that contains two users (a doctor and a nurse). Please push this file to /data/data/com.example.csc207app/files/ in order to log in.
+
+USING THE APPLICATION:
+-when updating vital signs, please update all three at the same time. If not all three vital signs have changed, then just update the vital signs that need to be updated
+and put the same vital sign as before for the unchanged values. This reflects a true ER procedure, as nurses wouldn't be checking only one vital sign, they monitor all of them
+-when updating vital signs, please enter 1 - 3 digit values, nothing greater, and please enter them as integers (i.e. 2, 45, 120 are acceptable, but 2000 is not). Temperature can be entered as a double
+-all data is written to the text file patientdata.txt. Pressing any "Save" or "Logout" buttons will do this
+-there is no arrival time/vital sign timestamp button simply because all of that is done in the back-end
+-all references to cardnumber/id in the Java code means health card number
+-after updating prescription, press the back button we made to go back to the previous screen
+-blood pressure is calculate using numbers, taking into account the definitions for the different blood pressures given in the handout
+-doctor visit date is stored in the format dd/mm/yy
+-there is a lot of commented out code in some of the backend files -- please ignore it
+
+SAMPLE OUTPUT FOR PATIENTDATA.TXT:
+Eric Lin~19-10-92~A1001~2013/11/03 23:56:49~Seen by doctor on 12/11/13~[110, 120]~[37.5, 39.0]~[90, 91]~[2013/11/03 23:56:49, 2013/11/03 23:56:49]~[tylenol, codeine]~[2013/11/12 23:56:49, 2013/11/12 23:56:49]
+
+In this sample case:
+Name: Eric Lin
+DOB: 19-10-1992
+CARD NUMBER: A1001
+ARRIVAL DATE/TIME: 2013/11/03 23:56:49
+SEEN BY A DOCTOR: Yes, on November 12th, 2013
+BLOOD PRESSURES: 110, 120 (120 being the most recent)
+TEMPERATURE: 37.5, 39.0 (39.0 being the most recent)
+HEART RATE: 90, 91 (91 being the most recent)
+TIMES THE VITAL SIGNS WERE LAST UPDATED: 2013/11/03 23:56:49, 2013/11/03 23:56:49
+PRESCRIPTIONS: tylenol, codeine
+TIMES THE VITAL SIGNS WERE LAST UPDATED: 2013/11/12 23:56:49, 2013/11/12 23:56:49
+ 

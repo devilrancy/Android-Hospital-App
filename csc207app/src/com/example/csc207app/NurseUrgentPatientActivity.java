@@ -1,0 +1,41 @@
+package com.example.csc207app;
+
+import type.Patient;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class NurseUrgentPatientActivity extends Activity {
+	private String patient;
+
+	@Override
+	/**
+	 * Initializes activity and sets the layout
+	 * @param The state of the instance that will be loaded
+	 */
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_nurse_urgent_patient);
+		
+		Intent intent = getIntent();
+		patient = (String) intent.getSerializableExtra("patientKey");
+		TextView showPatientInfo = (TextView) findViewById
+				(R.id.showPatientInfo);
+		showPatientInfo.setText(patient);
+	}
+
+	@Override
+	/**
+	 * Starts up the contents in the activity and the options menu
+	 * @param The option menu to bring up
+	 */
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the 
+		// action bar if it is present.
+		getMenuInflater().inflate(R.menu.nurse_urgent_patient, menu);
+		return true;
+	}
+
+}

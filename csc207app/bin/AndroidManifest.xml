@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.csc207app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.csc207app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.csc207app.OperationActivity"
+            android:label="@string/title_activity_operation" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.UpdateActivity"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.DoctorSelectionActivity"
+            android:label="@string/title_activity_doctor_selection" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.NurseSelectionActivity"
+            android:label="@string/title_activity_nurse_selection" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.NurseUpdateActivity"
+            android:label="@string/title_activity_nurse_update" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.DoctorUpdateActivity"
+            android:label="@string/title_activity_doctor_update" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.DoctorViewActivity"
+            android:label="@string/title_activity_doctor_view" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.NurseViewActivity"
+            android:label="@string/title_activity_nurse_view" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.PrescriptionActivity"
+            android:label="@string/title_activity_prescription" >
+        </activity>
+        <activity
+            android:name="com.example.csc207app.NurseUrgentPatientActivity"
+            android:label="@string/title_activity_nurse_urgent_patient" >
+        </activity>
+    </application>
+
+</manifest>

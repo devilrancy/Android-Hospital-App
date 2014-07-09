@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="20"
+        android:gravity="center"
+        android:hint="@string/updatevitalsign"
+        android:textSize="20dp" >
+
+        <requestFocus />
+    </TextView>
+
+    <EditText
+        android:id="@+id/blood_pressure_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/heart_rate_field"
+        android:layout_below="@+id/heart_rate_field"
+        android:ems="5"
+        android:hint="@string/blood_pressure" />
+
+    <EditText
+        android:id="@+id/heart_rate_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/temperature_field"
+        android:layout_below="@+id/temperature_field"
+        android:ems="5"
+        android:hint="@string/heart_rate" />
+
+    <EditText
+        android:id="@+id/temperature_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="23dp"
+        android:ems="5"
+        android:hint="@string/temperature" />
+
+    <Button
+        android:id="@+id/update_patient_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/blood_pressure_field"
+        android:layout_below="@+id/blood_pressure_field"
+        android:layout_marginTop="30dp"
+        android:onClick="updatePatient"
+        android:text="@string/updatevitalsignsbutton" />
+
+</RelativeLayout>
